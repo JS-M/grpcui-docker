@@ -17,4 +17,4 @@ RUN go install github.com/golang/protobuf/protoc-gen-go/ \
 
 EXPOSE ${PORT}
 
-CMD grpcui -bind 0.0.0.0 -port ${PORT} -plaintext ${URL}
+CMD grpcui -protoset ${PROTOSET_PATH} -bind 0.0.0.0 -port ${PORT} -plaintext ${URL}
