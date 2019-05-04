@@ -1,6 +1,6 @@
 push: login docker
-	docker push fguy/grpcui-docker
+	docker push ethermoon/grpcui-docker
 login:
 	docker login
 docker:
-	docker build -t fguy/grpcui-docker .
+	docker build -t ethermoon/grpcui-docker .
